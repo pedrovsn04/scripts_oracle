@@ -1,0 +1,3 @@
+03:53:58 PNXTL06.VCUNHA>/
+grant SELECT ANY DICTIONARY to WMSYS with admin option;
+03:53:58 PNXTL06.VCUNHA>spool off

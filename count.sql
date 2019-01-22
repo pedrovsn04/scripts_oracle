@@ -1,0 +1,80 @@
+15:50:57 PNXTL07.IT_PPNETO>/
+
+'SELECTCOUNT(*)FROM'||TABLE_OWNER||'.'||TABLE_NAME||'PARTITION('||PARTITION_NAME||');'
+-------------------------------------------------------------------------------------------------------------------------------
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200612);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200701);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200702);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200703);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200704);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200705);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200706);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200707);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200708);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200709);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200710);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200711);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200712);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200801);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200802);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200803);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200804);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200805);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200806);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200807);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200808);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200809);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200810);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200811);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200812);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200901);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200902);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200903);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200904);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200905);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200906);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200907);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200908);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200909);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200910);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200911);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P200912);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201001);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201002);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201003);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201004);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201005);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201006);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201007);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201008);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201009);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201010);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201011);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201012);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201101);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201102);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201103);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201104);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201105);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201106);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201107);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201108);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201109);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201110);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201111);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201112);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201201);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201202);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201203);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201204);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201205);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201206);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201207);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201208);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201209);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201210);
+select count (*) from DWH.FT_CAMPAIGN_CONTRACT  partition(P201211);
+
+72 rows selected.
+
+15:51:13 PNXTL07.IT_PPNETO>spool off;

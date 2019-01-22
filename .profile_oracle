@@ -1,0 +1,109 @@
+trap "echo 'logout'" 0 1 2
+export EDITOR=vi
+
+set -o vi
+
+PATH=$PATH:/usr/symcli/bin:/usr/bin:/usr/sbin:/sbin:/bin:/opt/VRTSvcs/bin:/usr/ccs/bin:/usr/openwin/bin::.:/usr/local/bin:/usr/ccs/bin:/opt/ansic/bin:/usr/sfw/bin:/usr/ucb:/usr/local/bin:/opt/sfw/bin/
+
+PATH_AUX=$PATH
+
+tput clear
+
+export NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P1
+export LD_LIBRARY_PATH=$ORACLE_HOME/bin:$ORACLE_HOME/lib:/usr/dt/lib:/usr/lib;
+export SHLIB_PATH=$ORACLE_HOME/lib:/usr/dt/lib:/usr/lib;
+export NLS_CHARACTERSET=WE8ISO8859P1
+export NLS_LANGUAGE=AMERICAN
+export NLS_TERRITORY=AMERICA
+export NLS_NUMERIC_CHARACTERS=.,
+export NLS_DATE_FORMAT=DD-MON-RR
+export NLS_SORT=binary
+export ORA_NLS10=/u01/app/oracle/product/11gR2_EBS/nls/data/9idata
+
+umask 002
+
+tput clear
+export PS1="`tput smso``hostname``tput rmso`@${LOGNAME}]\$PWD$ "
+MAQUINA="`uname -n`"
+tipo_os=`uname -s`
+
+                echo " "
+                echo "  Voce esta logado na Maquina : `tput smso` `echo $MAQUINA` `tput rmso`"
+                echo "  Seu usuario                 : `tput smso` `logname` `tput rmso`"
+                echo "  Seu ID                      : `tput smso` `id | cut -c1-35` `tput rmso`"
+                echo "  Versao do `uname`           : `tput smso` `uname -r` `tput rmso`"
+                echo "  Maquina Modelo              : `tput smso` `uname -m` `tput rmso`"
+
+echo  "\n\n"
+menu()
+{
+
+typeset -i aux
+bancos=0
+aux=1
+OFS=$IFS
+IFS=":"
+
+while read v_sid[${aux}] v_home[${aux}] lixo
+do
+ vstart=`grep "^${v_sid[${aux}]}:" /etc/oratab | awk -F":" '{ print $3 }'`
+ if [ "$vstart" = 'Y' ]
+   then
+    let bancos=bancos+1
+    let aux=aux+1
+ fi
+done </etc/oratab
+
+aux=1
+
+IFS="$OFS"
+flag=0
+while [ $flag -eq 0 ]
+   do tput clear
+      while [ $aux -le $bancos ]
+        do
+          vstart=`grep "^${v_sid[${aux}]}:" /etc/oratab | awk -F":" '{ print $3 }'`
+          if [ "$vstart" = 'Y' ]
+           then
+             echo "$aux - ORACLE_SID=${v_sid[${aux}]} ORACLE_HOME=${v_home[${aux}]}"
+          fi
+          let aux=aux+1
+        done
+      echo  "Opcao : \c"
+      read aux
+      if [ $aux -gt $bancos ]; then
+        aux=1
+        continue
+      else
+        export ORACLE_HOME=${v_home[${aux}]}
+        export ORACLE_SID=${v_sid[${aux}]}
+        export PATH=$PATH_AUX
+        export PATH=$PATH:$ORACLE_HOME/bin:$ORACLE_HOME/OPatch
+        break
+      fi
+   done
+
+
+# Set up the shell environment:
+set -u
+trap 0 1 2
+tput clear
+
+export PS1="${ORACLE_SID}:`tput smso``hostname``tput rmso`@${LOGNAME}]\$PWD> "
+MAQUINA="`uname -n`"
+tipo_os=`uname -s`
+
+                echo " "
+                echo "  Voce esta logado na Maquina : `tput smso` `echo $MAQUINA` `tput rmso`"
+                echo "  Seu usuario                 : `tput smso` `logname` `tput rmso`"
+                echo "  Seu ID                      : `tput smso` `id | cut -c1-35` `tput rmso`"
+                echo "  Versao do `uname`           : `tput smso` `uname -r` `tput rmso`"
+                echo "  Maquina Modelo              : `tput smso` `uname -m` `tput rmso`"
+
+echo "\n\n"
+}
+
+ulimit -n 65536
+ulimit -c 1024
+ulimit -s 65536
+

@@ -1,0 +1,1 @@
+conn it_ppneto/oracle#0408@&banco

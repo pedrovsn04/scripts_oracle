@@ -1,0 +1,121 @@
+03:28:30 PNXTL37.IT_PPNETO>select 'grant select on ' || owner || '.'|| view_name || ' to riab_select;'
+03:28:31   2  from dba_views
+03:28:31   3  where owner = 'IAB'
+03:28:31   4  order by view_name
+03:28:31   5  /
+
+'GRANTSELECTON'||OWNER||'.'||VIEW_NAME||'TORIAB_SELECT;'
+---------------------------------------------------------------------------------------------
+grant select on IAB.GIM_GCX_AGENT_PLACE_CTS to riab_select;
+grant select on IAB.GIM_GCX_AGENT_PLACE_DTS to riab_select;
+grant select on IAB.GIM_GCX_CAMPGROUP_INFO_CTS to riab_select;
+grant select on IAB.GIM_GCX_CAMPGROUP_INFO_DTS to riab_select;
+grant select on IAB.GIM_GCX_CAMPLIST_INFO_CTS to riab_select;
+grant select on IAB.GIM_GCX_CAMPLIST_INFO_DTS to riab_select;
+grant select on IAB.GIM_GCX_ENDPOINT_PLACE_CTS to riab_select;
+grant select on IAB.GIM_GCX_ENDPOINT_PLACE_DTS to riab_select;
+grant select on IAB.GIM_GCX_FORMAT_FIELD_CTS to riab_select;
+grant select on IAB.GIM_GCX_FORMAT_FIELD_DTS to riab_select;
+grant select on IAB.GIM_GCX_GROUP_AGENT_CTS to riab_select;
+grant select on IAB.GIM_GCX_GROUP_AGENT_DTS to riab_select;
+grant select on IAB.GIM_GCX_GROUP_ENDPOINT_CTS to riab_select;
+grant select on IAB.GIM_GCX_GROUP_ENDPOINT_DTS to riab_select;
+grant select on IAB.GIM_GCX_GROUP_PLACE_CTS to riab_select;
+grant select on IAB.GIM_GCX_GROUP_PLACE_DTS to riab_select;
+grant select on IAB.GIM_GCX_GROUP_ROUTEDN_CTS to riab_select;
+grant select on IAB.GIM_GCX_GROUP_ROUTEDN_DTS to riab_select;
+grant select on IAB.GIM_GCX_LIST_TREATMENT_CTS to riab_select;
+grant select on IAB.GIM_GCX_LIST_TREATMENT_DTS to riab_select;
+grant select on IAB.GIM_GCX_LOGIN_INFO_CTS to riab_select;
+grant select on IAB.GIM_GCX_LOGIN_INFO_DTS to riab_select;
+grant select on IAB.GIM_GCX_SKILL_LEVEL_CTS to riab_select;
+grant select on IAB.GIM_GCX_SKILL_LEVEL_DTS to riab_select;
+grant select on IAB.GIM_GCX_SUBCODE_CTS to riab_select;
+grant select on IAB.GIM_GCX_SUBCODE_DTS to riab_select;
+grant select on IAB.GIM_GC_ACTION_CODE_CTS to riab_select;
+grant select on IAB.GIM_GC_ACTION_CODE_LTS to riab_select;
+grant select on IAB.GIM_GC_AGENT_CTS to riab_select;
+grant select on IAB.GIM_GC_AGENT_LTS to riab_select;
+grant select on IAB.GIM_GC_APPLICATION_CTS to riab_select;
+grant select on IAB.GIM_GC_APPLICATION_LTS to riab_select;
+grant select on IAB.GIM_GC_ATTR_VALUE_CTS to riab_select;
+grant select on IAB.GIM_GC_ATTR_VALUE_LTS to riab_select;
+grant select on IAB.GIM_GC_BUS_ATTRIBUTE_CTS to riab_select;
+grant select on IAB.GIM_GC_BUS_ATTRIBUTE_LTS to riab_select;
+grant select on IAB.GIM_GC_CALLING_LIST_CTS to riab_select;
+grant select on IAB.GIM_GC_CALLING_LIST_LTS to riab_select;
+grant select on IAB.GIM_GC_CAMPAIGN_CTS to riab_select;
+grant select on IAB.GIM_GC_CAMPAIGN_LTS to riab_select;
+grant select on IAB.GIM_GC_ENDPOINT_CTS to riab_select;
+grant select on IAB.GIM_GC_ENDPOINT_LTS to riab_select;
+grant select on IAB.GIM_GC_FIELD_CTS to riab_select;
+grant select on IAB.GIM_GC_FIELD_LTS to riab_select;
+grant select on IAB.GIM_GC_FILTER_CTS to riab_select;
+grant select on IAB.GIM_GC_FILTER_LTS to riab_select;
+grant select on IAB.GIM_GC_FOLDER_CTS to riab_select;
+grant select on IAB.GIM_GC_FOLDER_LTS to riab_select;
+grant select on IAB.GIM_GC_FORMAT_CTS to riab_select;
+grant select on IAB.GIM_GC_FORMAT_LTS to riab_select;
+grant select on IAB.GIM_GC_GROUP_CTS to riab_select;
+grant select on IAB.GIM_GC_GROUP_LTS to riab_select;
+grant select on IAB.GIM_GC_IVRPORT_CTS to riab_select;
+grant select on IAB.GIM_GC_IVRPORT_LTS to riab_select;
+grant select on IAB.GIM_GC_IVR_CTS to riab_select;
+grant select on IAB.GIM_GC_IVR_LTS to riab_select;
+grant select on IAB.GIM_GC_LOGIN_CTS to riab_select;
+grant select on IAB.GIM_GC_LOGIN_LTS to riab_select;
+grant select on IAB.GIM_GC_OBJ_TABLE_CTS to riab_select;
+grant select on IAB.GIM_GC_OBJ_TABLE_LTS to riab_select;
+grant select on IAB.GIM_GC_PLACE_CTS to riab_select;
+grant select on IAB.GIM_GC_PLACE_LTS to riab_select;
+grant select on IAB.GIM_GC_SCRIPT_CTS to riab_select;
+grant select on IAB.GIM_GC_SCRIPT_LTS to riab_select;
+grant select on IAB.GIM_GC_SKILL_CTS to riab_select;
+grant select on IAB.GIM_GC_SKILL_LTS to riab_select;
+grant select on IAB.GIM_GC_SWITCH_CTS to riab_select;
+grant select on IAB.GIM_GC_SWITCH_LTS to riab_select;
+grant select on IAB.GIM_GC_TABLE_ACCESS_CTS to riab_select;
+grant select on IAB.GIM_GC_TABLE_ACCESS_LTS to riab_select;
+grant select on IAB.GIM_GC_TENANT_CTS to riab_select;
+grant select on IAB.GIM_GC_TENANT_LTS to riab_select;
+grant select on IAB.GIM_GC_TIME_ZONE_CTS to riab_select;
+grant select on IAB.GIM_GC_TIME_ZONE_LTS to riab_select;
+grant select on IAB.GIM_GC_TREATMENT_CTS to riab_select;
+grant select on IAB.GIM_GC_TREATMENT_LTS to riab_select;
+grant select on IAB.GIM_GC_VOICE_PROMPT_CTS to riab_select;
+grant select on IAB.GIM_GC_VOICE_PROMPT_LTS to riab_select;
+grant select on IAB.GIM_GOX_CHAIN_CALL_TS to riab_select;
+grant select on IAB.GIM_GO_CAMPAIGNHISTORY_ATS to riab_select;
+grant select on IAB.GIM_GO_CAMPAIGN_CTS to riab_select;
+grant select on IAB.GIM_GO_CAMPAIGN_LTS to riab_select;
+grant select on IAB.GIM_GO_CHAINREC_HIST_TS to riab_select;
+grant select on IAB.GIM_GO_CHAIN_TS to riab_select;
+grant select on IAB.GIM_GO_FIELDHIST_TS to riab_select;
+grant select on IAB.GIM_GO_METRICS_TS to riab_select;
+grant select on IAB.GIM_GO_SEC_FIELDHIST_TS to riab_select;
+grant select on IAB.GIM_GX_SESSION_ENDPOINT_TS to riab_select;
+grant select on IAB.GIM_GX_SESSION_ENDPOINT_TTS to riab_select;
+grant select on IAB.GIM_G_AGENT_STATE_HISTORY_TS to riab_select;
+grant select on IAB.GIM_G_AGENT_STATE_RC_TS to riab_select;
+grant select on IAB.GIM_G_AGENT_STATE_RC_TTS to riab_select;
+grant select on IAB.GIM_G_CALL_STAT_LTS to riab_select;
+grant select on IAB.GIM_G_CALL_TTS to riab_select;
+grant select on IAB.GIM_G_CUSTOM_DATA_S_ATS to riab_select;
+grant select on IAB.GIM_G_DND_HISTORY_TS to riab_select;
+grant select on IAB.GIM_G_IR_HISTORY_ATS to riab_select;
+grant select on IAB.GIM_G_IR_TTS to riab_select;
+grant select on IAB.GIM_G_IS_LINK_HISTORY_ATS to riab_select;
+grant select on IAB.GIM_G_IS_LINK_ITS to riab_select;
+grant select on IAB.GIM_G_LOGIN_SESSION_TS to riab_select;
+grant select on IAB.GIM_G_LOGIN_SESSION_TTS to riab_select;
+grant select on IAB.GIM_G_PARTY_HISTORY_ATS to riab_select;
+grant select on IAB.GIM_G_PARTY_TTS to riab_select;
+grant select on IAB.GIM_G_ROUTE_RESULT_TTS to riab_select;
+grant select on IAB.GIM_G_ROUTE_RES_VQ_HIST_ATS to riab_select;
+grant select on IAB.GIM_G_SECURE_UD_HISTORY_TS to riab_select;
+grant select on IAB.GIM_G_USERDATA_HISTORY_TS to riab_select;
+grant select on IAB.GIM_G_VIRTUAL_QUEUE_TTS to riab_select;
+
+109 rows selected.
+
+03:28:42 PNXTL37.IT_PPNETO>spool off;
